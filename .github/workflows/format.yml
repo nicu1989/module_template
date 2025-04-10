@@ -20,6 +20,15 @@ on:
     types: [checks_requested]
 
 jobs:
+  prepare-cache:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Cache Bazel
+      uses: actions/cache@v3
+      with:
+        path: "/home/runner/.cache/bazel"
+        key: bazel
+
   formatting-check:
     uses: nicu1989/cicd-workflows/.github/workflows/format.yml@nicu1989-patch-1
     with:
