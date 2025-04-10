@@ -1,4 +1,4 @@
-
+test
 # C++ & Rust Bazel Template Repository
 
 This repository serves as a **template** for setting up **C++ and Rust projects** using **Bazel**.
