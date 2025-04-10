@@ -21,6 +21,6 @@ on:
 
 jobs:
   formatting-check:
-    uses: eclipse-score/cicd-workflows/.github/workflows/format.yml@main
+    uses: nicu1989/cicd-workflows/.github/workflows/format.yml@nicu1989-patch-1
     with:
       bazel-target: "test //:format.check" # optional, this is the default
