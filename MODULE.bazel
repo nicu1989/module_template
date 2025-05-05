@@ -16,6 +16,7 @@ module(
 )
 
 bazel_dep(name = "rules_python", version = "1.0.0")
+
 PYTHON_VERSION = "3.12"
 
 python = use_extension("@rules_python//python/extensions:python.bzl", "python")
@@ -33,9 +34,7 @@ bazel_dep(name = "rules_rust", version = "0.56.0")
 
 # Checker rule for CopyRight checks/fixs
 bazel_dep(name = "score_cr_checker", version = "0.2.2")
-
 bazel_dep(name = "score_python_basics", version = "0.3.0")
-
 bazel_dep(name = "score_starpls_lsp", version = "0.1.0")
 
 # C/C++ rules for Bazel

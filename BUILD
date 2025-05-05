@@ -24,8 +24,8 @@ setup_starpls(
 
 score_virtualenv(
     name = "ide_support",
+    reqs = [],
     venv_name = ".venv",
-    reqs = []
 )
 
 copyright_checker(
